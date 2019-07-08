@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let products = [
+            {prodName: "Молоко", prodPrice: 70},
+            {prodName: "Сыр", prodPrice: 150},
+            {prodName: "Яйца", prodPrice: 80},
+            {prodName: "Масло", prodPrice: 120},
+            {prodName: "Картофель", prodPrice: 50},
+            {prodName: "Лук", prodPrice: 40},
+            {prodName: "Сметана", prodPrice: 75},
+            {prodName: "Капуста", prodPrice: 50},
+            {prodName: "Говядина", prodPrice: 500}
+        ];
+
+        function countBasketPrice(prodList) {
+            let totalCost = 0;
+            prodList.forEach(function(item) {
+                totalCost += item.prodPrice;
+            });
+            return totalCost;
+        }
+        console.log(countBasketPrice(products));
+    </script>
+</body>
+</html>
